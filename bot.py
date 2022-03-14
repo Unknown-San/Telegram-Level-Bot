@@ -44,8 +44,8 @@ async def is_admins(chat_id: int):
         )
     ]
 
-levellink =["https://telegra.ph/file/6620fe683ff3989268c7f.mp4", "https://telegra.ph/file/c6bbce91cb75d4ab318ae.mp4", "https://telegra.ph/file/c2ac7b63d248f49da952c.mp4", "https://telegra.ph/file/b100466a5f0c42fa7255f.mp4", "https://telegra.ph/file/67c9dc7b59f78aa7aaf4c.mp4", "https://telegra.ph/file/06e2d74343e89c9d3cd12.mp4", "https://telegra.ph/file/88458a18eea8e86292b14.mp4", "https://telegra.ph/file/e3786d4f321ff4335a70f.mp4"]
-levelname = ["Team Rocket", "Stray God", "Vector", "Hero Association", "Z Warrior", "Black Knight", "Ghoul", "Overlord"]
+levellink =["https://telegra.ph/file/12665a7f67a50e0727364.mp4", "https://telegra.ph/file/c6bbce91cb75d4ab318ae.mp4", "https://telegra.ph/file/dc8d480e8689c69b59db4.mp4", "https://telegra.ph/file/46f541f264bac6d573386.mp4", "https://telegra.ph/file/bf8510ce2b1566533d745.mp4", "https://telegra.ph/file/13686fe72bce44aef6e08.mp4", "https://telegra.ph/file/bc56712a525ecad52d736.mp4", "https://telegra.ph/file/8fa4c7b8957887cdffa44.mp4"]
+levelname = ["E-rank", "D-rank", "C-rank", "B-rank", "A-rank", "S-rank", "SS-rank", "SSS-rank"]
 levelnum = [2,5,15,25,35,50,70,100]
 
 
@@ -114,7 +114,7 @@ async def level(client, message):
                     l += 1
                 xp -= ((50*((l-1)**2))+(50*(l-1)))
                 if xp == 0:
-                    await message.reply_text(f"🌟 {message.from_user.mention}, You have reached level {l}**, Nothing can stop you on your way!")
+                    await message.reply_text(f" {message.from_user.mention}, You have reached level {l}**, Nothing can stop you on your way!")
     
                     for lv in range(len(levelname)) and range(len(levellink)):
                             if l == levelnum[lv]:            
